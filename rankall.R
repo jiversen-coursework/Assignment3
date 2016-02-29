@@ -9,7 +9,7 @@ rankall <- function(outcome, num = "best") {
   if (!outcome %in% validOutcome) { stop("invalid outcome")}
   
   validState = sort(unique(data[,7]))
-  if (!state %in% validState) stop("invalid state")
+  ##if (!state %in% validState) stop("invalid state")
   
   ## convert outcome name into column name
   fullColName <- c("Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack", "Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure", "Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia")
